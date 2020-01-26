@@ -1,0 +1,39 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+      <div class="col-md-8">
+          <div class="card">
+              <div class="card-header card-header-danger">
+                  <h4 class="card-title">Add a reminder</h4>
+              </div>
+              <div class="card-body">
+                  <form>
+                      <div class="row">
+                          <div class="col-md-4">
+                              <mat-form-field class="example-full-width">
+                                  <input matInput id="titleString" #title placeholder="Title">
+                              </mat-form-field>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <label>Description</label>
+                              <mat-form-field class="example-full-width">
+                                  <textarea matInput #desc id="descriptionBody"></textarea>
+                              </mat-form-field>
+                              <!-- <div class="form-group">
+
+                                  <div class="form-group">
+                                      <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
+                                      <textarea class="form-control" rows="5"></textarea>
+                                  </div>
+                              </div> -->
+                          </div>
+                      </div>
+                      <button mat-raised-button type="submit" (click)="updateValues()" class="btn btn-danger pull-right">Add Reminder</button>
+                      <div class="clearfix"></div>
+                  </form>
+              </div>
+          </div>
+      </div>
+</div>

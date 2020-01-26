@@ -1,0 +1,50 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title ">Total Students under you</h4>
+                      <p class="card-category"> Mentor for the list of students</p>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class=" text-primary">
+                                  <th>
+                                      ID
+                                  </th>
+                                  <th>
+                                      Name
+                                  </th>
+
+                                  <th>
+                                      Department
+                                  </th>
+
+                                  <th>
+                                      Uses Social Networking
+                                  </th>
+
+
+                                  <th>
+                                      Stress levels (predicted)
+                                  </th>
+                              </thead>
+
+                              <tbody *ngFor="let item of items">
+                                <td>{{item['idNumber']}}</td>
+                                <td>{{item['personName']}}</td>
+                                <td>{{item['department'] + '-' + item['section']}}</td>
+                                <td>Instagram</td>
+                                <td>0.4</td>
+                              </tbody>
+
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
